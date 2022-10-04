@@ -1,0 +1,22 @@
+[
+    {
+        "Nome": "Allan",
+        "nascimento": "01/01/1998",
+        "Entrada": "01/05/2005",
+        "Saída": "03/10/2022",
+        "Pai": "pai do allan",
+        "Mae": "mae do allan",
+        "Telefone": "45999887766",
+        "Observações": "não sabe python"
+    },
+    {
+        "Nome": "Fernando",
+        "nascimento": "05/06/1997",
+        "Entrada": "19/08/2008",
+        "Saída": "08/05/2022",
+        "Pai": "pai do fernando",
+        "Mae": "mae do fernando",
+        "Telefone": "45999776655",
+        "Observações": "alergico a agua"
+    },
+]
