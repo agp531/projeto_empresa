@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<!-- Allan (TMR 4867) / SMME.DT autor original, modificações by IEE3 -->
+
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+    <meta charset="UTF-8" />
+    <title>AAAAAAAAAAAAAAAAA</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <base target="_blank">
+</head>
+
+<body>
+
+    <div id="app">
+        <v-app id="inspire">
+
+            <div>
+                <v-app-bar app color="blue darken-4" dense dark>
+                    <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+                    <v-toolbar-title><strong> AAAAAAAAAAAAA </strong></v-toolbar-title>
+
+
+                    <v-spacer></v-spacer>
+                    <v-tooltip bottom>
+                        <template v-slot:activator="{ on, attrs }">
+                            <v-btn v-bind="attrs" v-on="on" icon>
+                                <v-icon>mdi-logout-variant</v-icon>
+                            </v-btn>
+                        </template>
+                        <span>LOG OUT</span>
+                </v-app-bar>
+                <v-navigation-drawer v-model="drawer" absolute temporary>
+                    <div class="d-flex justify-center" style='padding-top:50px; padding-bottom:10px;'>
+                        <v-avatar size="150">
+                            <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John">
+                        </v-avatar>
+                    </div>
+                    <p class="text-center">
+                        NOME COMPLETO COM SOBRENOME
+                    </p>
+
+                    <v-list nav dense>
+                        <v-list-item-group v-model="group" active-class="deep-purple--text text--accent-4">
+                            <v-list-item>
+                                <v-list-item-title>OPÇÃO 1</v-list-item-title>
+                            </v-list-item>
+
+                            <v-list-item>
+                                <v-list-item-title>OPÇÃO 2</v-list-item-title>
+                            </v-list-item>
+
+                            <v-list-item>
+                                <v-list-item-title>OPÇÃO 3</v-list-item-title>
+                            </v-list-item>
+                        </v-list-item-group>
+                    </v-list>
+                </v-navigation-drawer>
+            </div>
+
+            <v-main class="grey lighten-3">
+
+           
+
+                    <v-form class="justify-center">
+                        <v-row>
+                            <v-col>
+                                <v-btn>Button 1</v-btn>
+                            </v-col>
+                            <v-col>
+                                <v-btn>Button 2</v-btn>
+                            </v-col>
+                        </v-row>
+                       
+                    </v-form>
+
+           
+
+            </v-main>
+
+            <v-footer padless>
+                <v-col class="text-center" cols="12">
+                    <small>
+
+                        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+                    </small>
+                </v-col>
+            </v-footer>
+        </v-app>
+
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+            vuetify: new Vuetify(),
+
+            data: {
+                drawer: false,
+                group: null,
+            }, // Fim data:
+
+            computed: {
+
+            }, // Fim computed:
+
+            methods: {
+
+            }, // Fim methods:
+        });
+    </script>
+
+</body>
+
+</html>
